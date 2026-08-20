@@ -14,6 +14,7 @@ struct AppState {
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_autostart::Builder::new().build())
+        .plugin(tauri_plugin_notification::init())
         .setup(|app| {
             // Window utama: muat web app langsung
             let url: tauri::Url = APP_URL.parse().expect("URL aplikasi tidak valid");
