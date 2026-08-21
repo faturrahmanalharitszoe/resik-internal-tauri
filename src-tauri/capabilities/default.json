@@ -3,6 +3,12 @@
   "identifier": "default",
   "description": "Izin default untuk window utama Resik Internal",
   "windows": ["main"],
+  "remote": {
+    "urls": [
+      "https://internal.resikcemerlang.com",
+      "http://localhost:3002"
+    ]
+  },
   "permissions": [
     "core:default",
     "autostart:allow-enable",
